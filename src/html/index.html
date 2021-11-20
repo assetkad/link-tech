@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    @@include("chunk/header.html")
+
+    <h1>Hello gulp again</h1>
+
+    <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores expedita nisi illo soluta facere numquam, accusamus perspiciatis ex consequatur quod dolorem voluptatem tenetur! Sint eligendi error dicta sapiente veritatis quos.
+    Perferendis quod dolor ullam quos, iure distinctio dolores eos odio expedita ex modi facere saepe repellendus ut sed. Ex neque quaerat voluptate quae tempore deleniti molestias sed placeat? Eum, beatae!</pre>
+
+    @@loop("chunk/news-item.html", "../../data/news.json")
+
+    @@include("chunk/footer.html")
+
+</body>
+
+</html>
