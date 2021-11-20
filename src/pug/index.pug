@@ -3,12 +3,10 @@ extends layout/app
 block page 
     include chunk/header
 
-    h1.title Главная
-    
-    ul.news 
-        each item in news 
-            li= item.name
+    include chunk/subheader
 
-    i Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis cumque nostrum quaerat magnam accusamus vel optio? Nisi repudiandae nostrum sed consequuntur! Nisi quo mollitia dignissimos iure et consequatur necessitatibus veniam?
+    include chunk/services
+
+    include chunk/projects
 
     include chunk/footer
